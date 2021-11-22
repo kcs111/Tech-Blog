@@ -7,9 +7,20 @@
         <input name="content" type="text" value="{{post.content}}" class="form-input" />
         <button type="submit" class="btn">Update Post</button>
         <button type="button" class="delete-post-btn btn">Delete Post</button>
+
+        {{>comments}}
+
+
     </form>
+
+ 
+
+        <textarea    id="comment" cols="30" rows="10"></textarea>
+        <button id="addcomment" > add comment </button>
+     
 </div>
 
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>
